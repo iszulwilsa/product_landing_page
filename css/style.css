@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Patrick+Hand&display=swap");
+body {
+  background-color: black;
+  position: relative;
+  color: pink;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body h2 {
+  border: 4px solid pink;
+  padding: 10px 0;
+}
+#header {
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  z-index: 999;
+}
+#jumbotron {
+  background-image: url(/img/jumbotron.jpg);
+  height: 70vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jumbotron .container {
+  margin-top: 400px;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#jumbotron h1 {
+  color: pink;
+  border: 4px solid pink;
+  padding: 15px 20px;
+}
+#jumbotron p {
+  color: pink;
+}
+#jumbotron::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  bottom: 0;
+  background-size: cover;
+}
+#member .col-md-2 img {
+  height: 150px;
+  width: 150px;
+  border: 2px solid;
+  border-color: pink;
+  transition: 300ms;
+  border-radius: 50%;
+}
+.col-md-2:hover img {
+  transform: scale(1.2);
+}
+#video {
+  width: 560px;
+  height: 315px;
+}
+#email-form input {
+  width: 600px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+footer {
+  border-top: 5px solid pink;
+}
+footer a {
+  color: pink;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+@media (max-width: 576px) {
+  #jumbotron {
+    height: 250px;
+    margin-top: 70px;
+  }
+  .jumbotron .container {
+    margin-top: 70px;
+  }
+
+  #member .col-md-2 {
+    display: block;
+    justify-items: center;
+    text-align: center;
+  }
+  #video {
+    width: 340px;
+    height: 265px;
+  }
+  #email-form input {
+    width: 300px;
+  }
+}
